@@ -1,0 +1,18 @@
+<body style= "background-color: #97f5b2">
+<h1 style = "color: #6107b6; font-family: script">Sign Up Below!!!</h1>
+
+<form action = "/signed_up/" method = "POST">
+    
+    <input type = "text" name = "Username" placeholder = "Username" required>
+    <br>
+    <input id = "p1" input type = "Password" name = "Password" pattern="^\S{3,21}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.p2.pattern = this.value;" placeholder = "Password" required>
+    <br>
+    <input id = "p2" input type = "Password" name = "Verify Password" pattern="^\S{3,21}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder = "Verify Password" required>
+    <br>
+    <input type = "EmailInput" name= "Email (Optional)" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/i" placeholder = "Email (Optional)" value= ''>
+    <br>
+    <input type = "submit"  name= "Submit Query" value = "Submit Query">
+    
+</form>
+</body>
+
