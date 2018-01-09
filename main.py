@@ -10,7 +10,7 @@ def home():
     else: 
         return "Hello World!"
 
-@app.route('/signed_up/', methods=['POST'])
+@app.route("/signup", methods=['POST', 'GET'])
 def signed_up():
     return render_template('login1.html')
 
